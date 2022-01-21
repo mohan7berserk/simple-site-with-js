@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="horizontal-menu.css" rel="stylesheet">
+
+	<title>MOVIEINDEX</title>
+</head>
+<body>
+
+<header>
+		<h1>MovieIndex.com<img src="https://www.w3schools.com/html/programming.gif" alt="Computer man" style="width:48px;height:48px;"></h1>
+
+               <ul id="navbar">
+                        <li><a href="login.html">login</a></li>
+			<li><a href="0-9.html">0-9</a></li>
+			<li><a href="A.html">A</a></li>
+			<li><a href="B.html">B</a></li>
+			<li><a href="C.html">C</a></li>
+                         <li><a href="D.html">D</a></li>
+                        <li><a href="feedback.html">feedback</a></li>
+			
+		</ul>
+
+	</header>
+<br>
+<br>
+<br>
+<marquee behavior="scroll" direction="left">
+<img src="https://www.quackit.com/pix/samples/bats_013.gif" width="125" height="82" alt="Flying Bat">
+</marquee>
+<script>
+function validate()
+{
+
+if(document.getElementById("name").value.length == 0)
+{
+    alert("Name is empty")
+}
+
+if(document.getElementById("email").value.length == 0)
+{
+    alert("email is empty")
+}
+
+if(document.getElementById("phone").value.length == 0)
+{
+    alert("phone is empty")
+}
+
+if(document.getElementById("comments").value.length == 0)
+{
+    alert("comments is empty")
+}
+
+}
+
+</script>
+
+<form>
+<fieldset>
+  <label>Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label>email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label>Phone:</label><br>
+  <input type="Number" id="phone" name="phone"><br>
+   <label>comments</label><br>
+   <textarea id="comments"></textarea><br>
+   <input type="button" value="submit" onclick="validate()">
+   <p id="here"></p>
+</fieldset>
+</form>
+
+</body>
+</html>
